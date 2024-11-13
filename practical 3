@@ -17,3 +17,29 @@ a [pos]=a[(pos-1)//2]
 pos-(pos-1)//2
 
 a[pos]=new elt for i in range (j+1): print(a[i],end="")
+
+
+
+
+
+
+print("Min Heap")
+a=[]
+
+n=int(input("Enter the number of elements:"))
+
+for i in range(n):
+
+a.append (0)
+
+for j in range(n):
+new_elt=int(input("\nEnter the element: "))
+pos=j
+while a[(pos-1)//2]>=new elt and (pos-1)//2>-1:
+a [pos] =a [(pos-1)//2]
+pos=(pos-1)//2
+
+a[pos]=new elt
+
+for i in range (j+1):
+print(a[i],end="")
